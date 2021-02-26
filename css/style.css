@@ -1,0 +1,96 @@
+body {
+  background-image: url("https://cdn.gamedevmarket.net/wp-content/uploads/20191203151404/082c4faf72d352b18b32cf82b6ac68ad-700x389.jpg");
+  background-size: 100%;
+  max-width: 100vh;
+  display: flex;
+}
+
+.grid {
+  height: 560px;
+  min-width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 80px;
+  margin-top: 150px;
+  background-color: rgba(109, 127, 151, 0.5);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+  color: #85796b;
+}
+
+.grid div {
+  height: 70px;
+  width: 70px;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  color: white;
+  font-size: 85px;
+  text-shadow: 5px 10px 5px #fb75ff;
+  text-align: center;
+  white-space: nowrap;
+  padding-left: 480px;
+  margin-top: 0px;
+}
+
+h3 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+  font-family: "PT Sans", sans-serif;
+  margin-left: 10px;
+}
+
+#startTimer,
+#startMoves {
+  margin-bottom: 10px;
+  font-family: "Pacifico", cursive;
+  box-sizing: border-box;
+  min-width: 100px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #fe4495;
+  text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  background-image: linear-gradient(#fe4495, #d5095f);
+  border: none;
+  outline: none;
+}
+
+.invisible {
+  background-color: white;
+}
+
+#score {
+  font-family: "Lobster", cursive;
+  color: white;
+  font-size: 85px;
+  text-shadow: 5px 10px 5px #fb75ff;
+  margin-top: -30px;
+}
+
+.score-board {
+  background-color: pink;
+  border-radius: 10px;
+  margin-top: 150px;
+  margin-left: -800px;
+  margin-bottom: 250px;
+  min-width: 400px;
+  min-height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(#ffb6c1, #ffc0cb);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+  color: #85796b;
+}
