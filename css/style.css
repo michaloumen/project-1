@@ -47,7 +47,8 @@ h4 {
 }
 
 #startTimer,
-#startMoves {
+#startMoves,
+#restartGame {
   margin-bottom: 10px;
   font-family: "Pacifico", cursive;
   box-sizing: border-box;
