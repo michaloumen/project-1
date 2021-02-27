@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const scoreDisplay = document.getElementById("score");
   const startBtnOne = document.querySelector("#startTimer");
   const startBtnTwo = document.querySelector("#startMoves");
+  const restartGameBtn = document.querySelector("#restartGame");
   const timeLeftDisplay = document.querySelector("#time-left");
   const moveLeftDisplay = document.querySelector("#move-left");
   const width = 8; //será de 8x8
@@ -50,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       if (timeLeft <= 0 && score < points) {
         timeLeftDisplay.innerHTML = "You ran out of time 🥵";
+        grid.style.display = "none";
       }
     }, 1000);
   }
@@ -71,10 +73,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (moveLeft <= 0 && score < points) {
       moveLeftDisplay.innerHTML = "You ran out of moves 🥵";
+      grid.style.display = "none";
     }
   }
 
-  window.onload = function () {
+  window.onload = function onload() {
     startBtnOne.addEventListener("click", countDown);
     startBtnTwo.addEventListener("click", countMoves);
     var startTimer = document.getElementById("startTimer");
@@ -93,7 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
     startMoves.onclick = function () {
       document.getElementById("startMoves").style.display = "none";
       document.getElementById("startTimer").style.display = "none";
-      document.getElementById("startMoves").style.display = "none";
       grid.style.display = "flex";
       mode = "moves";
       executeGame();
