@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         grid.style.display = "none";
       }
       if (timeLeft <= 0 && score < points) {
-        timeLeftDisplay.innerHTML = "You ran out of moves 🥵";
+        timeLeftDisplay.innerHTML = "You ran out of time 🥵";
       }
     }, 1000);
   }
